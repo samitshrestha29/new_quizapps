@@ -34,7 +34,7 @@ class Repository {
           CategoryDifficultyModel.fromJson(data['category_question_count']);
       return difficultyModel;
     } on SocketException catch (error) {
-      throw Exception('Internet not connected : $error');
+  throw Exception('Internet not connected : $error');
     } catch (e) {
       throw Exception('Api Error : $e');
     }
